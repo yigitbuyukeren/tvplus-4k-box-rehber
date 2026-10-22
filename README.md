@@ -14,7 +14,7 @@
 ![Geri alınabilir](https://img.shields.io/badge/her%20ad%C4%B1m-geri%20al%C4%B1nabilir-E8480C?style=flat-square&labelColor=16150F)
 ![Android TV 10](https://img.shields.io/badge/Android%20TV-10-E8480C?style=flat-square&labelColor=16150F&logo=android&logoColor=3DDC84)
 [![Son güncelleme](https://img.shields.io/github/last-commit/yigitbuyukeren/tvplus-4k-box-rehber?style=flat-square&labelColor=16150F&color=E8480C&label=son%20g%C3%BCncelleme)](https://github.com/yigitbuyukeren/tvplus-4k-box-rehber/commits/main)
-[![cleanyourtv'ye eklendi](https://img.shields.io/badge/cleanyourtv-PR%20%23874-E8480C?style=flat-square&labelColor=16150F)](https://github.com/Gathin23/cleanyourtv/pull/874)
+[![cleanyourtv'ye eklendi](https://img.shields.io/badge/cleanyourtv-listeye%20eklendi-E8480C?style=flat-square&labelColor=16150F)](https://github.com/Gathin23/cleanyourtv/pull/874)
 
 🇹🇷 [Türkçe](#-türkçe) &nbsp;·&nbsp; 🇬🇧 [English](#-english)
 
@@ -128,7 +128,7 @@ Senin kutunda yazılım farklıysa paket adları değişmiş olabilir; `DRY_RUN=
 
 ### 🙏 Teşekkür ve lisans
 
-- Ana ekran ve temizlik yaklaşımı: [Gathin23/cleanyourtv](https://github.com/Gathin23/cleanyourtv) (MIT). Bu kutunun listesi oraya da [PR olarak gönderildi](https://github.com/Gathin23/cleanyourtv/pull/874).
+- Ana ekran ve temizlik yaklaşımı: [Gathin23/cleanyourtv](https://github.com/Gathin23/cleanyourtv) (MIT). Bu kutunun listesi oraya da [eklendi](https://github.com/Gathin23/cleanyourtv/pull/874).
 - YouTube istemcisi: [yuliskov/SmartTube](https://github.com/yuliskov/SmartTube).
 - Bu repodaki metin ve betikler [MIT lisansı](LICENSE) ile.
 
@@ -148,7 +148,7 @@ box handed out by a Turkish operator. **Root-free and fully reversible over Wi-F
 
 - 📈 Free RAM after boot went from **~460 MB to ~930 MB**; ZRAM use from ~185 MB to ~25 MB.
 - 🖥️ Fixes the 2160p YCbCr 4:2:0 default on 1080p screens (back to 1080p, 4:4:4).
-- 🔎 **Key finding:** disabling the stock YouTube app makes `com.sdmc.GlobalKey` crash on the YouTube button, which kills every app button (Play Store included) until a reboot. Remapping the keys through the launcher's accessibility service avoids it. This box's list was also contributed upstream: [cleanyourtv #874](https://github.com/Gathin23/cleanyourtv/pull/874).
+- 🔎 **Key finding:** disabling the stock YouTube app makes `com.sdmc.GlobalKey` crash on the YouTube button, which kills every app button (Play Store included) until a reboot. Remapping the keys through the launcher's accessibility service avoids it. This box's list is now part of cleanyourtv: [cleanyourtv #874](https://github.com/Gathin23/cleanyourtv/pull/874).
 
 ```bash
 export TV=192.168.1.50 && adb connect $TV:5555
