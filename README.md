@@ -97,7 +97,7 @@ Senin kutunda yazılım farklıysa paket adları değişmiş olabilir; `DRY_RUN=
 
 ## Teşekkür ve lisans
 
-- Ana ekran ve temizlik yaklaşımı: [Gathin23/cleanyourtv](https://github.com/Gathin23/cleanyourtv) (MIT). Bu kutunun listesi oraya da [gönderildi](https://github.com/Gathin23/cleanyourtv/tree/main/examples).
+- Ana ekran ve temizlik yaklaşımı: [Gathin23/cleanyourtv](https://github.com/Gathin23/cleanyourtv) (MIT). Bu kutunun listesi oraya da [PR olarak gönderildi](https://github.com/Gathin23/cleanyourtv/pull/874).
 - YouTube istemcisi: [yuliskov/SmartTube](https://github.com/yuliskov/SmartTube).
 - Bu repodaki metin ve betikler [MIT lisansı](LICENSE) ile.
 
