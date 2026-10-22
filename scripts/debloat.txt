@@ -1,0 +1,42 @@
+# Turkcell TV+ 4K Box (TV PLUS 4K BOX, SDMC DV6069Y_TVPLUS), Android TV 10, yazılım QT.20230328
+#
+# Her satır bir paket. Paketler devre dışı bırakılır (pm disable-user), SİLİNMEZ.
+# Kullandığın bir şey varsa satırın başına # koy, o paket atlanır.
+#
+# Dokunulmaması gerekenler (bu listede yoklar, olmamalılar):
+#   com.sdmc.GlobalKey          kumandanın YouTube / Play / TV+ tuşları
+#   com.sdmc.standbyserver      bekleme modu
+#   com.sdmc.bluetoothconnect   kumanda eşleştirme
+#   com.sdmc.disablecec         HDMI-CEC ayarı (sadece ilk açılışta çalışır)
+#   com.sdmc.factorymonitor     paket kaldırmayı izliyor, ne yaptığı belli değil
+#   com.droidlogic*             Amlogic sistem, görüntü ve Bluetooth ayarları
+#   com.droidlogic.otaupgrade   yazılım güncellemeleri
+#   com.google.android.tungsten.setupwraith, Play Store, Play Hizmetleri, Gboard (klavye)
+
+# Veri toplama, log, fabrika testi
+com.google.android.feedback
+com.google.android.tv.bugreportsender
+com.droidlogic.readlog                 # USB bellek takılınca logları ona kopyalıyor
+com.sdmc.facTest                       # fabrika test uygulaması, açılışta çalışıyor
+
+# Öneri satırları, operatör özelleştirmesi, otomatik kurulum
+com.google.android.tvrecommendations
+com.sdmc.leakbackcustomer              # eski ana ekrandaki operatör satırları
+android.autoinstalls.config.sdmc       # Play üzerinden ortak uygulamaları otomatik kurma
+com.sdmc.autorunapp                    # açılışta operatör uygulamasını başlatıyor
+
+# Kişisel tercih: kullanmıyorsan kapat
+com.google.android.katniss             # sesli asistan (kumandanın mikrofon tuşu çalışmaz olur)
+com.google.android.apps.mediashell     # Chromecast (telefondan yansıtma)
+
+# Kişisel tercih: resmi YouTube. Kapatırsan kumanda tuşlarını mutlaka yeniden ata
+# (docs/05-kumanda-tuslari.md), yoksa YouTube tuşu tuş servisini çökertir ve Play tuşu da ölür.
+# com.google.android.youtube.tv
+
+# Ön yüklü uygulamalar
+com.google.android.videos              # Play Filmler
+com.google.android.play.games          # Play Oyunlar
+com.google.android.marvin.talkback     # ekran okuyucu
+com.android.printspooler               # yazdırma
+com.android.camera2                    # kamera (kutuda kamera yok)
+com.android.gallery3d                  # galeri
