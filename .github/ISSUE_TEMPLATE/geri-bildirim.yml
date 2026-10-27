@@ -1,0 +1,32 @@
+name: Geri bildirim / deneme raporu
+description: Denedin mi? Ne çalıştı, ne çalışmadı? Kısa bir not yeter.
+title: "Geri bildirim: "
+labels: [geri-bildirim]
+body:
+  - type: markdown
+    attributes:
+      value: "Kullanım deneyimini paylaştığın için teşekkürler. Lütfen kişisel veri, konum, fotoğraf veya sohbet içeriği paylaşma; gerekiyorsa örneği anonimleştir."
+  - type: input
+    attributes:
+      label: "Kutu modeli ve yazılım sürümü"
+      description: "Örn. SDMC DV6069Y"
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: "Hangi betiği çalıştırdın?"
+      description: "Örn. status.sh, debloat.sh (DRY_RUN ile mi gerçek mi?)"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "Ne oldu?"
+      description: "Çıktıyı ekle. Cihazına zarar veren bir adım varsa mutlaka belirt."
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "Önerin var mı?"
+      description: "Hiçbir şey yazmasan da olur."
+    validations:
+      required: false

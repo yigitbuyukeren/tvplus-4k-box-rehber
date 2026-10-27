@@ -1,0 +1,32 @@
+name: Hata bildirimi
+description: Bir şey beklediğin gibi çalışmıyor
+title: "Hata: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Lütfen kişisel veri, konum, fotoğraf veya sohbet içeriği paylaşma; gerekiyorsa örneği anonimleştir."
+  - type: input
+    attributes:
+      label: "Kutu modeli ve yazılım sürümü"
+      description: "Örn. SDMC DV6069Y"
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: "Hangi betiği çalıştırdın?"
+      description: "Örn. status.sh, debloat.sh (DRY_RUN ile mi gerçek mi?)"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "Ne oldu?"
+      description: "Beklediğin ve gerçekleşen davranış."
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "Nasıl tekrarlanır?"
+      description: "Adım adım."
+    validations:
+      required: true
