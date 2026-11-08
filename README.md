@@ -114,6 +114,10 @@ Her şeyi geri almak için: `./scripts/restore.sh`.
 > Hepsi `DRY_RUN=1` ile kutuya hiçbir şey yazmadan ne yapacağını gösterir. Başka bir kutuda
 > çalışmamak için model kontrolü yaparlar (`FORCE=1` ile atlanır).
 
+Betik değişikliklerinde `bash -c 'for script in scripts/*.sh; do bash -n "$script" || exit 1; done'`
+komutu cihaz bağlantısı kurmadan sözdizimini kontrol eder. Bu kontrol, cihaz
+üzerindeki davranışın veya geri alma işleminin doğrulaması değildir.
+
 ### 📦 Bu rehberin dayandığı kutu
 
 | | |
