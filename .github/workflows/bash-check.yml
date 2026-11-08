@@ -8,3 +8,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: for script in scripts/*.sh; do bash -n "$script" || exit 1; done
+      - run: bash scripts/test-safety.sh
